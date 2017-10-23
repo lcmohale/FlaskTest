@@ -1,0 +1,28 @@
+{% extends 'home.html'%}
+{% block body %}
+     {% block image%}
+	    <header class="header">
+		    <div class="container"> 
+		    <img class="profile-image img-responsive pull-left wrap" src ="{{ url_for('static', filename = 'images/stories.jpg')}}" alt="about" />
+			<div class="profile-content pull-left">
+                <h1 class="name" >Stories</h1>
+                <h2 id="me" class="desc">Perhaps they could be called, the Stoep Stories !!!</h2> 
+				<div id="navigation">
+		             <a href="\stories\id" style="color:orange">In his Life Time... </a>	  
+	            </div>
+			</div>
+			</div>
+		</header>
+	{% endblock %}
+	<div class="col-lg-12" style="text-align:center; padding-top:20px;">
+		<div class="container col-lg-4">
+		   Three one many is one time Two two many is three many times  Three one many is one time Two two many is three many times  Three one many is one time Two two many is three many times  Three one many is one time Two two many is three many times  Three one many is one time Two two many is three many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times
+		</div>
+		<div class="container col-lg-4">
+		   Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times
+		</div>
+		<div class="container col-lg-4">
+		   One two many is too many times Three one many is one time One two many is too many times Three one many is one time One two many is too many times Three one many is one time One two many is too many times Three one many is one time One two many is too many times Three one many is one time Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times Two two many is three many times One two many is too many times
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'index.html'%}
+{% block body%}
+    <div class="col-lg-12 container-fluid" style="padding-top:30px;">
+	  {% for post in post %}
+		    <div id="wrap" class="col-lg-4" style="font-family:Consolas; text-align:center; word-wrap: break-word;">
+			    <span style="font-size:18pt; color:orange; font-family:comic sans">{{ post.blogTitle }}</span></br></br>
+			    {{ post.blogText |safe }} 
+			</div>
+	   {% endfor %}
+	</div>
+{% endblock %}

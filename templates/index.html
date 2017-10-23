@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!-->
+<!--<![endif]-->   
+<html lang="en"> 
+    <head>
+	    <title>@LCMr_music Home</title>
+		<link rel="icon" href="{{ url_for('static',filename ='favicon.ico') }}" />
+		
+		<link rel='stylesheet' href="{{ url_for('static', filename = 'css/bootstrap.min.css')}}"/>
+        <link rel='stylesheet' href="{{ url_for('static', filename = 'css/myStyle.css')}}"/>		
+		<link rel='stylesheet' href="{{ url_for('static', filename = 'css/styles.css')}}"/>
+		<link rel="stylesheet" href="{{url_for('static', filename ='css/font-awesome/css/font-awesome.min.css')}}"/>
+		
+		<!--Javascript -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery-1.11.3.min.js')}}"></script>
+	    <script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery.shorten.js')}}"></script>
+	   			
+	</head>
+    <body>
+	    <div class="navbar-fixed-top" role="navigation" id="navigation" style="text-align:left; background:white;">
+			<a href="\">Home |</a>
+			<a href="\about">About |</a>
+			<a href="\contact">Contact |</a>
+			<a href="\blog">Blog |</a>
+			
+			<span class="copyright" style="float:right; padding-right:25px;"><a href="\music">@LCMr_music 2017</a></span>
+	    </div>
+		{% block body%}
+		{% endblock%}
+		
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery-ui.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/date.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/myScript.js')}}"></script>
+	</body>
+</html>

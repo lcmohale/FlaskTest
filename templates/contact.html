@@ -1,0 +1,61 @@
+{% extends 'home.html' %}
+{% block body%}
+       {% block image%}
+	    <header class="header">
+		    <div class="container"> 
+		    <img class="profile-image img-responsive pull-left" src ="{{ url_for('static', filename = 'images/contact.jpg')}}" alt="about" />
+			<div class="profile-content pull-left">
+                <h1 class="name" >Contacts, Contained</h1>
+                <h2 class="desc" id="me" >About Us, about You, about them...</h2> 
+				<div id="navigation">
+		             <a href="\">Pictures |</a>
+		             <a href="\contact">Favourites |</a>	  
+	            </div>
+			</div>
+			</div>
+		</header>
+	{% endblock %}
+	<div class="col-lg-12" style="background:skyblue; padding:10px; font-variant:small-caps; font-family:courier new">
+		You can Use any of the Following to Keep in touch with Me :)
+		
+	</div>
+	<div class="col-lg-12" style="padding:10px;">
+	    <div width="100%" id="wrap" style="padding:0px;">
+		     <div class="col-lg-4"><h3><a href="https://facebook.com/lcmohale">Facebook</a></h3></div>
+			 <div class="col-lg-4"><h3><a href="https://facebook.com/lcmohale">Twitter</a></h3></div>
+			 <div class="col-lg-4"><h3><a href="https://facebook.com/lcmohale">Instagram</a></h3></div>
+		    <div class="col-lg-12">
+				 <div class="col-lg-2"></div> 
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2></a></div>
+				 <div class="col-lg-2"><a href="#"><a></div>
+				 <div class="col-lg-2"><a href="#"><h2>Email</h2></a></div> 
+				 <div class="col-lg-2"></div>
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2><a></div>
+			 </div>
+			 <div class="col-lg-12">
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2></a></div> 
+				 <div class="col-lg-2"></div>
+				 <div class="col-lg-2"><a href="#"><h2>Email</h2></a></div>
+				 <div class="col-lg-2"></div> 
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2><a></div>
+				 <div class="col-lg-2"></div>
+			 </div>
+			 <div class="col-lg-12">
+			     <div class="col-lg-2"></div> 
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2></a></div>
+				 <div class="col-lg-2"><a href="#"><a></div>
+				 <div class="col-lg-2"><a href="#"><h2>Email</h2></a></div> 
+				 <div class="col-lg-2"></div>
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2><a></div>
+			 </div>
+			 <div class="col-lg-12">
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2></a></div> 
+				 <div class="col-lg-2"></div>
+				 <div class="col-lg-2"><a href="#"><h2>Email</h2></a></div>
+				 <div class="col-lg-2"></div> 
+				 <div class="col-lg-2"><a href="#"><h2>Message</h2><a></div>
+				 <div class="col-lg-2"></div>
+			 </div>
+		</div>
+	</div>
+{% endblock %}

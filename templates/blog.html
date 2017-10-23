@@ -1,0 +1,56 @@
+{% extends "home.html"%}
+{% block body%}
+
+    {% block image%}
+	    <header class="header">
+		    <div class="container"> 
+		    <img class="profile-image img-responsive pull-left" src ="{{ url_for('static', filename = 'images/blog.jpg')}}" alt="blog" />
+			<div class="profile-content pull-left">
+                <h1 class="name">Blogging...</h1>
+                <h2 class="desc"id="me" >Do more of what makes You Happy*</h2> 
+				<div id="navigation">
+		             <a href="\">General |</a>
+		             <a href="\contact">Favourites |</a>
+		             <a href="\learn">Code Stories |</a>
+					 <a href="\learn">Stoep Stories |</a>
+					 <a href="\learn">Thoughts</a>
+	            </div>
+			</div>
+			</div>
+		</header>
+	{% endblock %}
+	<div class="col-lg-12" style="background:skyblue; padding:10px;"></div>
+	<div class="col-lg-12" style="padding-top:20px;">
+	   <div class="col-lg-12" id="blogpost">
+		   <small>12 February 1993</small>
+		   <a style="display:block" href="\blog\1"><h2 style="color:#CC0066">Hello World!</h2></a>
+		   <hr style="color:black;">
+	   </div>
+	   {% for blogpost in blogPosts %}
+	   
+	   <div class="col-lg-12" id="blogpost" >
+	      <small style="padding-bottom:0px;">{{ blogpost.blogDate }}</small>
+	      <a style="display:block padding-top:0px;" href="\blog\{{ blogpost.id }}">
+		        <h2  style="color:orange"id="blgTitle" >{{ blogpost.blogTitle }} </h2> 
+		  </a>
+		  <p class="text">{{ blogpost.blogText }}</p>
+		  <hr style="border-color:black;"/>
+	   </div>
+	   
+	   {% endfor %}
+	   
+	  
+	 
+	</div>
+	<script language="javascript">
+        $(document).ready(function() {
+	        $('.text').shorten({
+		        moreText: 'Continue...',
+		        lessText: 'read less',
+				ellipsesText: '...',
+				showChars: 200
+	        }); 
+        });
+    </script>
+	
+{% endblock %}

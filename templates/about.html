@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+{% block body%}
+       {% block image%}
+	    <header class="header">
+		    <div class="container"> 
+		    <img class="profile-image img-responsive pull-left" src ="{{ url_for('static', filename = 'images/area.jpg')}}" alt="about" />
+			<div class="profile-content pull-left">
+                <h1 class="name" >Out & About </h1>
+                <h2 class="desc" id="me" >About Us, about You, about them...</h2> 
+				<div id="navigation">
+		             <a href="\projects">Pictures |</a>
+		             <a href="\contact">Favourites Places|</a>
+		             <a href="\learn">Education |</a>
+					<a href="\terms">Licence & Terms</a>
+	            </div>
+			</div>
+			</div>
+		</header>
+	{% endblock %}
+	<div class="col-lg-12" style="background:skyblue; padding:10px;">
+	</div>
+	
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+{% block body%}
+    {% block image%}
+	    <header class="header">
+		    <div class="container"> 
+		    <img class="profile-image img-responsive pull-left wrap" src ="{{ url_for('static', filename = 'images/music.jpg')}}" alt="about" />
+			<div class="profile-content pull-left">
+                <h1 class="name" >MUSIC</h1>
+                <h2 id="me" class="desc">Would say allot about it, but let the music say...</h2> 
+				<div id="navigation">
+		             <a href="\stories\music%story" style="color:maroon">I Simply Love Music <i class="fa fa-heart"> Abuti Mmino</i></a>	  
+	            </div>
+			</div>
+			</div>
+		</header>
+	{% endblock %}
+    <div id="musicList">
+	    <ul style="list-style:none;">
+		    <li><a href="/linktodownloadsong">Music In my Mind!</a> <span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">I just need the God</a><span id="songDetail"> 3:04 - .mp3 - 3.2mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Jesus is Lord</a><span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Feeling like</a><span id="songDetail"> 4:00 - .mp3 - 4mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Mmino on You</a><span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Take Time</a><span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Time</a><span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Cool of the Night</a><span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+			<li><a href="/linktodownloadsong">Fabulous</a><span id="songDetail"> 4:23 - .mp3 - 5mb</span><hr/></li>
+		</ul>
+	</div>
+{% endblock %}

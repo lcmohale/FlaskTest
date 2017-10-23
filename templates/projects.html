@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+{% block body%}
+       {% block image%}
+	    <header class="header">
+		    <div class="container"> 
+		    <img class="profile-image img-responsive pull-left" src ="{{ url_for('static', filename = 'images/mycode.jpg')}}" alt="about" />
+			<div class="profile-content pull-left">
+                <h1 class="name" >Ahh Coding & Stuff &ldquo; &rdquo; </h1>
+                <h2 class="desc" id="me" >Computer Instructions</h2> 
+				<div id="navigation">
+		             <a href="\">NLP |</a>
+		             <a href="\contact">Data-Based |</a>
+		             <a href="\learn">Learning |</a>
+					 <a href="\learn">Web</a>
+	            </div>
+			</div>
+			</div>
+		</header>
+	{% endblock %}
+<div class="col-lg-12">
+hi
+</div>
+{% endblock %}

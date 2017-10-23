@@ -1,0 +1,53 @@
+{% extends "index.html"%}
+{% block body%}
+    {% block image%}
+	<header class="header">
+        <div class="container">                       
+            <img class="profile-image img-margin img-responsive pull-left" src ="{{ url_for('static', filename = 'images/mrmusic.jpg')}}" alt="@LCMr_music" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Lebohang Clifford Mohale</h1>
+                <h2 class="desc"id="me" >Just Me*</h2>   
+                <ul class="social list-inline">
+                    <li><a href="https://www.twitter.com/@LCMr_music"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a href="https://www.plus.google.com/lcmohale"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/lcmohale"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.github.com/lcmohale"><i class="fa fa-github-alt"></i></a></li>	
+                </ul> 
+				<h6 class ="orange">All The Glory To God*</h6>
+            </div><!--//profile-->
+		     <div style="text-align:center; padding:30; font-size:12pt;">
+			     <hr/>
+				 <a href="https://instagram.com/lcmohale">Instagram </a><br/>
+				<a href="https://www.github.com/lcmohale">GitHub</a><br/>
+			     <a href="https://twitter.com/@LCMr_music">Twitter</a><br/>
+			     <a href="https://plus.google.com/lcmohale">Google+ </a><br/>
+			     <a href="https://facebook.com/lcmohale">Facebook </a><br/>
+			     Email: lcmohale@gmail.com<br/>
+			     Contact: 0763436520<br/><br/>
+		    </div>              
+        </div><!--//container-->
+       </header><!--//header-->
+	
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <span id="Xiaoying">Xiaoying Riley, </span><a href="https://twitter.com/@LCMr_music">@LCMr_music</a> for You</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+	
+	<div class="col-lg-12 container" style="padding:20px">
+	    <div style="background:#ffaaee; text-align:center;" class="row" >
+		    <p>
+			Once upon a time in Naledi a village within the mountains of QwaQwa was a boy, the boy grew to become a teen, the teen then later became a man, the man was taken to school to study what he never knew would be the like of his life the boy was introduced to Computer Programming and He loved it! he forever praises God for the Love.He now continually learns new things, if only he had the time to learn them ALL he would, but due to circumstances, he uses the little time he has to Learn what he enjoys learning; To PHP, to Java, javascript, CSS and to C-Windows, while he Node.js and Pythons, even to the Extent of Teaching Machines to Learn
+			</p>
+		</div>
+	    <div class="col-lg-12" style="color:gray; font-size:18pt; font-family:segoe print; text-align:center; padding-top:20px;">
+		    <p>
+			<span style="font-family:impact;color:skyblue">Welcome</span> to my Web site / Web Page /WebApp... or what ever, I welcome You anyway. I like a lot of things some which wont be able to fit on this App, but here you might want to check out <a href="\blog"> my blog </a> or perhaps see <a href="/pictures">some pictures</a>, listen to <a href="/music">my music</a>, read some <a href="/stories">stories </a> and maybe get a <a href="/thoughts">glimpse into my mind</a>.If you are interested in my <span style="font-family:courier new; font-weight:bold; color:blue">IT </span>Skills<br/> 
+			<span><a href="/projects" style="color:orange"> &quot; Check Me out. &quot;</a></span> 
+			</p>
+	    </div>
+	</div>
+	{% endblock %}
+{% endblock %}
